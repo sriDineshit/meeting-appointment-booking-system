@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Appointment Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#booking-section">BookMeeting</a></li>
+                <li><a href="#availability-section">CheckAvailability</a></li>
+                <li><a href="#cancel-booking-section">CancelMeeting</a></li>
+               
+                   <li><button class="button" onclick="location.href='signup.html'">Sign Up</button></li>
+                   <li> <button  class="button" onclick="location.href='signin.html'">Sign In</button></li>
+              
+            </ul>
+        </nav>
+        <div class="hero-section">
+            <h1>Welcome to Appointment Scheduling</h1>
+            <p>Plan your meetings efficiently with us. Sign up or log in to get started.</p>
+            
+        </div>
+        
+    </header>
+
+    <main>
+        <section id="booking-section" class="booking-section">
+            <h2>Book Your Meeting</h2>
+            <form   action="/api/bookings" method="post"  class="booking-form">
+                <label for="Name">Name:</label>
+                <input type="text" id="Name" name="Name" required>
+
+                <label for="meetingDate">Meeting Date:</label>
+                <input type="date" id="meetingDate" name="meetingDate" required>
+                
+                <label for="meetingTime">Meeting Time:</label>
+                <input type="time" id="meetingTime" name="meetingTime" required>
+
+                <label for="meetingSubject">Meeting Subject:</label>
+                <input type="text" id="meetingSubject" name="meetingSubject" required>
+
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+
+        <section id="availability-section" class="availability-section">
+            <h2>Check Availability</h2>
+            <form action="#" class="availability-form">
+                <label for="checkDate">Check Date:</label>
+                <input type="date" id="checkDate" name="checkDate" required>
+                
+                <label for="checkTime">Check Time:</label>
+                <input type="time" id="checkTime" name="checkTime" required>
+
+                <button type="submit">Check Availability</button>
+            </form>
+        </section>
+
+        <section id="cancel-booking-section" class="cancel-booking-section">
+            
+            <form action="#" class="cancel-booking-form">
+                <h2>Cancel Meeting</h2>
+                <div class="form-group">
+                    <label for="cancelName">Your Name:</label>
+                    <input type="text" id="cancelName" name="cancelName" required>
+                </div>
+               
+        
+                <button type="submit">Cancel Meeting</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meeting Planner Made by SridineshG.</p>
+    </footer>
+</body>
+</html>

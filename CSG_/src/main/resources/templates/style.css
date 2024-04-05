@@ -1,0 +1,206 @@
+
+body {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F1F1F2;
+
+
+}
+button
+{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color:  #dfdfe6; 
+  border: none; /* No border */
+  color: black;
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* No underline */
+  display: inline-block; /* Display as inline-block */
+  font-size: 16px; /* Font size */
+  margin: 4px 2px; /* Margin */
+  transition-duration: 0.4s; /* Smooth transition on hover */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 20px; /* Rounded corners */
+
+}
+
+
+header {
+  background-color: #1995AD;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.auth-buttons button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.auth-buttons button:hover {
+  background-color: #45a049;
+}
+
+/* Main Section Styles */
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.booking-section, .availability-section,.cancel-booking-form {
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.booking-section h2, .availability-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.booking-form, .availability-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-form label, .availability-form label {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+
+.booking-form input[type="date"], .booking-form input[type="time"],
+.availability-form input[type="date"], .availability-form input[type="time"],
+.booking-form input[type="text"] {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.booking-form input[type="date"]:focus, .booking-form input[type="time"]:focus,
+.availability-form input[type="date"]:focus, .availability-form input[type="time"]:focus,
+.booking-form input[type="text"]:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.booking-form button[type="submit"], .availability-form button[type="submit"] {
+  background-color: #1995AD;
+
+  ;
+  color:white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: solid;
+}
+
+
+
+/* Footer Styles */
+footer {
+  background-color: #1995AD;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+/* CSS for the navigation bar */
+nav {
+  background-color: #1995AD;
+  padding: 10px 0;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex; /* Use flexbox to align items */
+  justify-content: space-evenly; /* Distribute items evenly along the main axis */
+  align-items: center; /* Align items vertically */
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color:  #A1D6E2,;
+  text-decoration:underline;
+}
+.cancel-booking-form {
+  text-align: center;
+}
+
+.cancel-booking-form .form-group {
+  margin-bottom: 20px;
+}
+
+.cancel-booking-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.cancel-booking-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cancel-booking-form button {
+  background-color:  #1995AD;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
